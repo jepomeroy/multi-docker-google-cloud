@@ -12,7 +12,7 @@ spec:
     - hosts:
         - epomeroy.com
         - www.epomeroy.com
-      name: epomeroy-com
+      secretName: epomeroy-com
   rules:
     - host: epomeroy.com
       http:
