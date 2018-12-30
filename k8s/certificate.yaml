@@ -1,0 +1,20 @@
+apiVersion: certmanager.k8s.io/v1v1aplpha1
+kind: Certificate
+metadata:
+  name: epomeroy-com-tls
+spec:
+  secretName: epomeory-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: epomeroy.com
+  dnsName:
+    - epomeroy.com
+    - www.epomeroy.com
+  acme:
+    config:
+      - http01
+          ingressClass: nginx
+        domains:
+          - epomeroy.com
+          - www.epomeroy.com
