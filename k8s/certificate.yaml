@@ -1,4 +1,4 @@
-apiVersion: certmanager.k8s.io/v1v1aplpha1
+apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
   name: epomeroy-com-tls
@@ -13,7 +13,7 @@ spec:
     - www.epomeroy.com
   acme:
     config:
-      - http01
+      - http01:
           ingressClass: nginx
         domains:
           - epomeroy.com
