@@ -3,7 +3,7 @@ kind: Certificate
 metadata:
   name: epomeroy-com-tls
 spec:
-  secretName: epomeory-com
+  secretName: epomeroy-com
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
